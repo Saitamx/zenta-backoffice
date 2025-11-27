@@ -1,0 +1,126 @@
+{
+  "app": {
+    "title": "Zenta Backoffice"
+  },
+  "nav": {
+    "logout": "Salir",
+    "login": "Ingresar",
+    "register": "Crear cuenta",
+    "language": "Idioma"
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar sesión",
+      "subtitle": "Bienvenido de nuevo. Ingresa para continuar.",
+      "emailLabel": "Correo",
+      "emailPlaceholder": "tu@correo.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "tu contraseña",
+      "submit": "Ingresar",
+      "noAccount": "¿No tienes cuenta?",
+      "createAccount": "Crear una cuenta",
+      "requiredEmail": "Ingresa tu correo.",
+      "requiredPassword": "Ingresa tu contraseña.",
+      "rememberMe": "Recuérdame",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "errorInvalid": "Correo o contraseña incorrectos. Revisa tus datos e inténtalo nuevamente.",
+      "errorGeneric": "Tuvimos un problema al iniciar sesión. Por favor, inténtalo otra vez."
+    },
+    "register": {
+      "title": "Crear cuenta",
+      "subtitle": "Crea tu cuenta para comenzar.",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "emailLabel": "Correo",
+      "emailPlaceholder": "tu@correo.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "Mínimo 6 caracteres",
+      "confirmLabel": "Confirmar contraseña",
+      "confirmPlaceholder": "Repite la contraseña",
+      "submit": "Crear cuenta",
+      "haveAccount": "¿Ya tienes cuenta?",
+      "goLogin": "Iniciar sesión",
+      "requiredName": "Ingresa tu nombre.",
+      "requiredEmail": "Ingresa tu correo.",
+      "requiredPassword": "Ingresa tu contraseña.",
+      "requiredConfirm": "Confirma tu contraseña.",
+      "errorEmailExists": "Ese correo ya está registrado. Prueba iniciar sesión o usa otro correo.",
+      "errorGeneric": "No pudimos crear tu cuenta en este momento. Inténtalo de nuevo.",
+      "passwordMismatch": "Las contraseñas no coinciden.",
+      "successCreated": "Cuenta creada. Iniciando sesión..."
+    }
+  },
+  "books": {
+    "title": "Libros",
+    "searchPlaceholder": "Buscar por título, autor, editorial",
+    "errorLoading": "No pudimos cargar los libros. Inténtalo de nuevo.",
+    "new": "Nuevo libro",
+    "form": {
+      "newTitle": "Nuevo libro",
+      "editTitle": "Editar libro",
+      "subtitle": "Completa los campos. La validación es en tiempo real.",
+      "title": "Título",
+      "author": "Autor",
+      "publishedYear": "Año",
+      "description": "Descripción",
+      "cover": "Imagen de portada",
+      "coverHint": "Opcional. JPG/PNG. Solo vista previa (no se sube aún).",
+      "create": "Crear libro",
+      "saveChanges": "Guardar cambios",
+      "cancel": "Cancelar",
+      "created": "Libro creado",
+      "updated": "Libro actualizado",
+      "submitError": "No pudimos guardar el libro. Intenta de nuevo.",
+      "loadError": "No pudimos cargar el libro.",
+      "errors": {
+        "title": "Ingresa un título.",
+        "author": "Ingresa un autor.",
+        "publishedYear": "Ingresa un año de 4 dígitos.",
+        "isbn": "El ISBN debe tener al menos 10 caracteres."
+      }
+    },
+    "details": {
+      "title": "Detalle del libro",
+      "edit": "Editar",
+      "back": "Volver al listado"
+    }
+  },
+  "filters": {
+    "genre": "Género",
+    "publisher": "Editorial",
+    "author": "Autor",
+    "availability": "Disponibilidad",
+    "all": "Todos",
+    "available": "Disponible",
+    "unavailable": "No disponible",
+    "addSort": "Agregar orden"
+  },
+  "sort": {
+    "asc": "asc",
+    "desc": "desc"
+  },
+  "table": {
+    "title": "Título",
+    "author": "Autor",
+    "genre": "Género",
+    "publisher": "Editorial",
+    "year": "Año",
+    "rating": "Rating",
+    "status": "Estado",
+    "loading": "Cargando...",
+    "empty": "Sin resultados"
+  },
+  "status": {
+    "available": "Disponible",
+    "unavailable": "No disponible"
+  },
+  "pagination": {
+    "of": "de",
+    "perPage": "{{count}} / página",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "page": "Página {{page}} / {{totalPages}}",
+    "pageSizeAria": "Tamaño de página"
+  }
+}
+

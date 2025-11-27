@@ -1,0 +1,126 @@
+{
+  "app": {
+    "title": "Zenta Backoffice"
+  },
+  "nav": {
+    "logout": "Sign out",
+    "login": "Sign in",
+    "register": "Create account",
+    "language": "Language"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Welcome back. Please sign in to continue.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "your password",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create an account",
+      "requiredEmail": "Please enter your email.",
+      "requiredPassword": "Please enter your password.",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "errorInvalid": "Invalid email or password. Please try again.",
+      "errorGeneric": "We had a problem signing you in. Please try again."
+    },
+    "register": {
+      "title": "Create account",
+      "subtitle": "Create your account to get started.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "At least 6 characters",
+      "confirmLabel": "Confirm password",
+      "confirmPlaceholder": "Repeat password",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "goLogin": "Sign in",
+      "requiredName": "Please enter your name.",
+      "requiredEmail": "Please enter your email.",
+      "requiredPassword": "Please enter your password.",
+      "requiredConfirm": "Please confirm your password.",
+      "errorEmailExists": "That email is already registered. Try signing in or use another email.",
+      "errorGeneric": "We couldn't create your account. Please try again later.",
+      "passwordMismatch": "Passwords do not match.",
+      "successCreated": "Account created. Signing you in..."
+    }
+  },
+  "books": {
+    "title": "Books",
+    "searchPlaceholder": "Search by title, author, publisher",
+    "errorLoading": "We couldn't load books. Please try again.",
+    "new": "New book",
+    "form": {
+      "newTitle": "New book",
+      "editTitle": "Edit book",
+      "subtitle": "Complete the fields below. Fields validate as you type.",
+      "title": "Title",
+      "author": "Author",
+      "publishedYear": "Year",
+      "description": "Description",
+      "cover": "Cover image",
+      "coverHint": "Optional. JPG/PNG. Preview only (not uploaded yet).",
+      "create": "Create book",
+      "saveChanges": "Save changes",
+      "cancel": "Cancel",
+      "created": "Book created",
+      "updated": "Book updated",
+      "submitError": "We couldn't save the book. Try again.",
+      "loadError": "We couldn't load the book.",
+      "errors": {
+        "title": "Please enter a title.",
+        "author": "Please enter an author.",
+        "publishedYear": "Enter a 4-digit year.",
+        "isbn": "ISBN should have at least 10 characters."
+      }
+    },
+    "details": {
+      "title": "Book details",
+      "edit": "Edit",
+      "back": "Back to list"
+    }
+  },
+  "filters": {
+    "genre": "Genre",
+    "publisher": "Publisher",
+    "author": "Author",
+    "availability": "Availability",
+    "all": "All",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "addSort": "Add sort"
+  },
+  "sort": {
+    "asc": "asc",
+    "desc": "desc"
+  },
+  "table": {
+    "title": "Title",
+    "author": "Author",
+    "genre": "Genre",
+    "publisher": "Publisher",
+    "year": "Year",
+    "rating": "Rating",
+    "status": "Status",
+    "loading": "Loading...",
+    "empty": "No results"
+  },
+  "status": {
+    "available": "Available",
+    "unavailable": "Unavailable"
+  },
+  "pagination": {
+    "of": "of",
+    "perPage": "{{count}} / page",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page {{page}} / {{totalPages}}",
+    "pageSizeAria": "Page size"
+  }
+}
+

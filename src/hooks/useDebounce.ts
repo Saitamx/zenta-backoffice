@@ -1,0 +1,25 @@
+import { useEffect, useRef, useState } from "react";
+
+export function useDebounce<T>(value: T, delayMs: number): T {
+  const [debounced, setDebounced] = useState<T>(value);
+  const timeoutRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (timeoutRef.current) {
+      window.clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = window.setTimeout(() => {
+      setDebounced(value);
+    }, delayMs);
+
+    return () => {
+      if (timeoutRef.current) {
+        window.clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [value, delayMs]);
+
+  return debounced;
+}
+
+
