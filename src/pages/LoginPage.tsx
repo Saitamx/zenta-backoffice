@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { Alert } from "../components/atoms/Alert";
 import { LogIn, Mail, Lock } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { RegisterForm } from "../components/organisms/RegisterForm";
 
 const DEFAULT_EMAIL = "";
 
@@ -15,7 +14,6 @@ export const LoginPage: React.FC = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [showRegister, setShowRegister] = useState(false);
   const [email, setEmail] = useState(DEFAULT_EMAIL);
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(true);
@@ -50,10 +48,7 @@ export const LoginPage: React.FC = () => {
 
   return (
     <AuthLayout>
-      {showRegister ? (
-        <RegisterForm onGoLogin={() => setShowRegister(false)} />
-      ) : (
-        <form onSubmit={onSubmit} className="space-y-4" autoComplete="off">
+      <form onSubmit={onSubmit} className="space-y-4" autoComplete="off">
         <h2 className="text-xl font-semibold text-gray-900">{t("auth.login.title")}</h2>
         <p className="text-sm text-gray-700">{t("auth.login.subtitle")}</p>
         <div className="space-y-1">
@@ -101,9 +96,6 @@ export const LoginPage: React.FC = () => {
             />
             {t("auth.login.rememberMe")}
           </label>
-          <button type="button" className="text-sm font-medium text-indigo-600 hover:underline">
-            {t("auth.login.forgotPassword")}
-          </button>
         </div>
         {errorKey && <Alert tone="error">{t(errorKey)}</Alert>}
 
@@ -115,19 +107,7 @@ export const LoginPage: React.FC = () => {
           <LogIn size={18} />
           {loading ? `${t("auth.login.submit")}...` : t("auth.login.submit")}
         </Button>
-
-        <div className="flex items-center justify-between text-sm text-gray-700">
-          <span>{t("auth.login.noAccount")}</span>
-          <button
-            type="button"
-            onClick={() => setShowRegister(true)}
-            className="font-medium text-indigo-600 underline-offset-2 hover:underline"
-          >
-            {t("auth.login.createAccount")}
-          </button>
-        </div>
         </form>
-      )}
     </AuthLayout>
   );
 };
